@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zapchat.Api", "Zapchat.Api\Zapchat.Api.csproj", "{58CD2155-6E11-4058-A2BD-7C90E64333AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zapchat.Service", "Zapchat.Service\Zapchat.Service.csproj", "{4CE6165F-2502-46E8-9737-6FDC5F8E76EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zapchat.Domain", "Zapchat.Domain\Zapchat.Domain.csproj", "{CE8B14B6-B8D2-4E6A-954D-18EB1E9F4794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zapchat.Repository", "Zapchat.Repository\Zapchat.Repository.csproj", "{11C403A2-F3DB-4C37-9FBF-8AB419B2C587}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58CD2155-6E11-4058-A2BD-7C90E64333AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58CD2155-6E11-4058-A2BD-7C90E64333AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58CD2155-6E11-4058-A2BD-7C90E64333AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58CD2155-6E11-4058-A2BD-7C90E64333AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE6165F-2502-46E8-9737-6FDC5F8E76EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE6165F-2502-46E8-9737-6FDC5F8E76EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE6165F-2502-46E8-9737-6FDC5F8E76EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE6165F-2502-46E8-9737-6FDC5F8E76EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8B14B6-B8D2-4E6A-954D-18EB1E9F4794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8B14B6-B8D2-4E6A-954D-18EB1E9F4794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8B14B6-B8D2-4E6A-954D-18EB1E9F4794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8B14B6-B8D2-4E6A-954D-18EB1E9F4794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C403A2-F3DB-4C37-9FBF-8AB419B2C587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C403A2-F3DB-4C37-9FBF-8AB419B2C587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C403A2-F3DB-4C37-9FBF-8AB419B2C587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C403A2-F3DB-4C37-9FBF-8AB419B2C587}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

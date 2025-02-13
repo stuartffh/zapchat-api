@@ -1,0 +1,17 @@
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\Zapchat.Service.csproj.AssemblyReference.cache
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\Zapchat.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\Zapchat.Service.AssemblyInfoInputs.cache
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\Zapchat.Service.AssemblyInfo.cs
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\Zapchat.Service.csproj.CoreCompileInputs.cache
+F:\Dev\Zapchat\Zapchat.Service\bin\Debug\net7.0\Zapchat.Service.deps.json
+F:\Dev\Zapchat\Zapchat.Service\bin\Debug\net7.0\Zapchat.Service.dll
+F:\Dev\Zapchat\Zapchat.Service\bin\Debug\net7.0\Zapchat.Service.pdb
+F:\Dev\Zapchat\Zapchat.Service\bin\Debug\net7.0\Zapchat.Domain.dll
+F:\Dev\Zapchat\Zapchat.Service\bin\Debug\net7.0\Zapchat.Repository.dll
+F:\Dev\Zapchat\Zapchat.Service\bin\Debug\net7.0\Zapchat.Repository.pdb
+F:\Dev\Zapchat\Zapchat.Service\bin\Debug\net7.0\Zapchat.Domain.pdb
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\Zapchat.Service.csproj.CopyComplete
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\Zapchat.Service.dll
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\refint\Zapchat.Service.dll
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\Zapchat.Service.pdb
+F:\Dev\Zapchat\Zapchat.Service\obj\Debug\net7.0\ref\Zapchat.Service.dll

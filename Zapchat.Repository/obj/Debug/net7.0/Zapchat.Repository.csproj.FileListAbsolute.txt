@@ -1,0 +1,15 @@
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\Zapchat.Repository.csproj.AssemblyReference.cache
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\Zapchat.Repository.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\Zapchat.Repository.AssemblyInfoInputs.cache
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\Zapchat.Repository.AssemblyInfo.cs
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\Zapchat.Repository.csproj.CoreCompileInputs.cache
+F:\Dev\Zapchat\Zapchat.Repository\bin\Debug\net7.0\Zapchat.Repository.deps.json
+F:\Dev\Zapchat\Zapchat.Repository\bin\Debug\net7.0\Zapchat.Repository.dll
+F:\Dev\Zapchat\Zapchat.Repository\bin\Debug\net7.0\Zapchat.Repository.pdb
+F:\Dev\Zapchat\Zapchat.Repository\bin\Debug\net7.0\Zapchat.Domain.dll
+F:\Dev\Zapchat\Zapchat.Repository\bin\Debug\net7.0\Zapchat.Domain.pdb
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\Zapchat.Repository.csproj.CopyComplete
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\Zapchat.Repository.dll
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\refint\Zapchat.Repository.dll
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\Zapchat.Repository.pdb
+F:\Dev\Zapchat\Zapchat.Repository\obj\Debug\net7.0\ref\Zapchat.Repository.dll

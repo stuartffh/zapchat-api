@@ -1,0 +1,11 @@
+F:\Dev\Zapchat\Zapchat.Domain\bin\Debug\net7.0\Zapchat.Domain.deps.json
+F:\Dev\Zapchat\Zapchat.Domain\bin\Debug\net7.0\Zapchat.Domain.dll
+F:\Dev\Zapchat\Zapchat.Domain\bin\Debug\net7.0\Zapchat.Domain.pdb
+F:\Dev\Zapchat\Zapchat.Domain\obj\Debug\net7.0\Zapchat.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dev\Zapchat\Zapchat.Domain\obj\Debug\net7.0\Zapchat.Domain.AssemblyInfoInputs.cache
+F:\Dev\Zapchat\Zapchat.Domain\obj\Debug\net7.0\Zapchat.Domain.AssemblyInfo.cs
+F:\Dev\Zapchat\Zapchat.Domain\obj\Debug\net7.0\Zapchat.Domain.csproj.CoreCompileInputs.cache
+F:\Dev\Zapchat\Zapchat.Domain\obj\Debug\net7.0\Zapchat.Domain.dll
+F:\Dev\Zapchat\Zapchat.Domain\obj\Debug\net7.0\refint\Zapchat.Domain.dll
+F:\Dev\Zapchat\Zapchat.Domain\obj\Debug\net7.0\Zapchat.Domain.pdb
+F:\Dev\Zapchat\Zapchat.Domain\obj\Debug\net7.0\ref\Zapchat.Domain.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "evJEwqZWBI0QIK2b8f99OMo4ysdGQV19IX9x4UWKhvo=",
+  "Source": "Zapchat.Api",
+  "BasePath": "_content/Zapchat.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
