@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Dev\\Zapchat\\Zapchat.Api\\Zapchat.Api.csproj": {}
+    "E:\\dev\\zapchat-api\\Zapchat.Api\\Zapchat.Api.csproj": {}
   },
   "projects": {
-    "F:\\Dev\\Zapchat\\Zapchat.Api\\Zapchat.Api.csproj": {
+    "E:\\dev\\zapchat-api\\Zapchat.Api\\Zapchat.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Dev\\Zapchat\\Zapchat.Api\\Zapchat.Api.csproj",
+        "projectUniqueName": "E:\\dev\\zapchat-api\\Zapchat.Api\\Zapchat.Api.csproj",
         "projectName": "Zapchat.Api",
-        "projectPath": "F:\\Dev\\Zapchat\\Zapchat.Api\\Zapchat.Api.csproj",
-        "packagesPath": "C:\\Users\\Rafael Carvalho\\.nuget\\packages\\",
-        "outputPath": "F:\\Dev\\Zapchat\\Zapchat.Api\\obj\\",
+        "projectPath": "E:\\dev\\zapchat-api\\Zapchat.Api\\Zapchat.Api.csproj",
+        "packagesPath": "C:\\Users\\Rafae\\.nuget\\packages\\",
+        "outputPath": "E:\\dev\\zapchat-api\\Zapchat.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafael Carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\Dev\\Zapchat\\Zapchat.Service\\Zapchat.Service.csproj": {
-                "projectPath": "F:\\Dev\\Zapchat\\Zapchat.Service\\Zapchat.Service.csproj"
+              "E:\\dev\\zapchat-api\\Zapchat.Service\\Zapchat.Service.csproj": {
+                "projectPath": "E:\\dev\\zapchat-api\\Zapchat.Service\\Zapchat.Service.csproj"
               }
             }
           }
@@ -38,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -50,11 +56,13 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.36, )"
+              "version": "[7.0.20, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.36, )"
+              "version": "[7.0.20, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -80,21 +88,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj": {
+    "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj",
+        "projectUniqueName": "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj",
         "projectName": "Zapchat.Domain",
-        "projectPath": "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj",
-        "packagesPath": "C:\\Users\\Rafael Carvalho\\.nuget\\packages\\",
-        "outputPath": "F:\\Dev\\Zapchat\\Zapchat.Domain\\obj\\",
+        "projectPath": "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj",
+        "packagesPath": "C:\\Users\\Rafae\\.nuget\\packages\\",
+        "outputPath": "E:\\dev\\zapchat-api\\Zapchat.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafael Carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,6 +110,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -114,6 +123,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -135,21 +149,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Dev\\Zapchat\\Zapchat.Repository\\Zapchat.Repository.csproj": {
+    "E:\\dev\\zapchat-api\\Zapchat.Repository\\Zapchat.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Dev\\Zapchat\\Zapchat.Repository\\Zapchat.Repository.csproj",
+        "projectUniqueName": "E:\\dev\\zapchat-api\\Zapchat.Repository\\Zapchat.Repository.csproj",
         "projectName": "Zapchat.Repository",
-        "projectPath": "F:\\Dev\\Zapchat\\Zapchat.Repository\\Zapchat.Repository.csproj",
-        "packagesPath": "C:\\Users\\Rafael Carvalho\\.nuget\\packages\\",
-        "outputPath": "F:\\Dev\\Zapchat\\Zapchat.Repository\\obj\\",
+        "projectPath": "E:\\dev\\zapchat-api\\Zapchat.Repository\\Zapchat.Repository.csproj",
+        "packagesPath": "C:\\Users\\Rafae\\.nuget\\packages\\",
+        "outputPath": "E:\\dev\\zapchat-api\\Zapchat.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafael Carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -157,14 +171,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj": {
-                "projectPath": "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj"
+              "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj": {
+                "projectPath": "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj"
               }
             }
           }
@@ -173,15 +188,52 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.36, )"
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -200,21 +252,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Dev\\Zapchat\\Zapchat.Service\\Zapchat.Service.csproj": {
+    "E:\\dev\\zapchat-api\\Zapchat.Service\\Zapchat.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Dev\\Zapchat\\Zapchat.Service\\Zapchat.Service.csproj",
+        "projectUniqueName": "E:\\dev\\zapchat-api\\Zapchat.Service\\Zapchat.Service.csproj",
         "projectName": "Zapchat.Service",
-        "projectPath": "F:\\Dev\\Zapchat\\Zapchat.Service\\Zapchat.Service.csproj",
-        "packagesPath": "C:\\Users\\Rafael Carvalho\\.nuget\\packages\\",
-        "outputPath": "F:\\Dev\\Zapchat\\Zapchat.Service\\obj\\",
+        "projectPath": "E:\\dev\\zapchat-api\\Zapchat.Service\\Zapchat.Service.csproj",
+        "packagesPath": "C:\\Users\\Rafae\\.nuget\\packages\\",
+        "outputPath": "E:\\dev\\zapchat-api\\Zapchat.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafael Carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -222,17 +274,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj": {
-                "projectPath": "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj"
+              "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj": {
+                "projectPath": "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj"
               },
-              "F:\\Dev\\Zapchat\\Zapchat.Repository\\Zapchat.Repository.csproj": {
-                "projectPath": "F:\\Dev\\Zapchat\\Zapchat.Repository\\Zapchat.Repository.csproj"
+              "E:\\dev\\zapchat-api\\Zapchat.Repository\\Zapchat.Repository.csproj": {
+                "projectPath": "E:\\dev\\zapchat-api\\Zapchat.Repository\\Zapchat.Repository.csproj"
               }
             }
           }
@@ -241,6 +294,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -272,7 +330,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

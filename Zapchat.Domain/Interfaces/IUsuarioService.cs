@@ -1,6 +1,6 @@
 ﻿using Zapchat.Domain.DTOs;
 
-namespace Zapchat.Service.Interfaces
+namespace Zapchat.Domain.Interfaces
 {
     public interface IUsuarioService
     {

@@ -3,7 +3,6 @@ using FluentValidation;
 using Zapchat.Domain.DTOs;
 using Zapchat.Domain.Entities;
 using Zapchat.Domain.Interfaces;
-using Zapchat.Service.Interfaces;
 
 namespace Zapchat.Service.Services
 {

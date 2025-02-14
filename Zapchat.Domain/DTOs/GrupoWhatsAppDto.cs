@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Zapchat.Service.DTOs
+namespace Zapchat.Domain.DTOs
 {
     public class GrupoWhatsAppDto
     {

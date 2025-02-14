@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Rafael Carvalho\\.nuget\\packages\\": {}
+    "C:\\Users\\Rafae\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj",
+      "projectUniqueName": "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj",
       "projectName": "Zapchat.Domain",
-      "projectPath": "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj",
-      "packagesPath": "C:\\Users\\Rafael Carvalho\\.nuget\\packages\\",
-      "outputPath": "F:\\Dev\\Zapchat\\Zapchat.Domain\\obj\\",
+      "projectPath": "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj",
+      "packagesPath": "C:\\Users\\Rafae\\.nuget\\packages\\",
+      "outputPath": "E:\\dev\\zapchat-api\\Zapchat.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rafael Carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +28,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -40,6 +41,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -61,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,13 +8,12 @@ using Zapchat.Service.Mappings;
 using Zapchat.Service.Validations;
 using Microsoft.EntityFrameworkCore;
 using Zapchat.Service.Services;
-using Zapchat.Service.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adicionando SQLite
+// Configuração do DbContext com SQLite
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=Zapchat.db"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Injeção de dependência
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();

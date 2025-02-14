@@ -7,9 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Zapchat.Domain.DTOs;
 using Zapchat.Domain.Interfaces;
-using Zapchat.Service.Interfaces;
 
-namespace Zapchat.Service.Service
+namespace Zapchat.Service.Services
 {
     public class ParametroSistemaService : IParametroSistemaService
     {

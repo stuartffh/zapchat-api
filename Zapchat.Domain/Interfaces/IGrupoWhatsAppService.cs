@@ -1,17 +1,13 @@
-﻿using Zapchat.Service.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Zapchat.Domain.DTOs;
+﻿using Zapchat.Domain.DTOs;
 
-namespace Zapchat.Service.Interfaces
+namespace Zapchat.Domain.Interfaces
 {
     public interface IGrupoWhatsAppService
     {
-        Task<IEnumerable<GrupoWhatsAppDto>> ListarTodos();
-        Task<GrupoWhatsAppDto?> BuscarPorId(Guid id);
-        Task<GrupoWhatsAppDto> Adicionar(GrupoWhatsAppDto dto);
-        Task Atualizar(GrupoWhatsAppDto dto);
-        Task Deletar(Guid id);
+        Task<IEnumerable<GrupoWhatsAppDto>> GetAllAsync();
+        Task<GrupoWhatsAppDto?> GetByIdAsync(Guid id);
+        Task<GrupoWhatsAppDto> AddAsync(GrupoWhatsAppDto usuarioDto);
+        Task<GrupoWhatsAppDto?> UpdateAsync(Guid id, GrupoWhatsAppDto usuarioDto);
+        Task<bool> DeleteAsync(Guid id);
     }
 }

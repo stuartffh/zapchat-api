@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h0VNEA9aJW1SPveC3F7Gmro69JW3VaIbXFdKWG2Itr6RE8iCH4WomozylPPEd1SNdFnuZDasukCb2Gvpb6wvAQ==",
+  "dgSpecHash": "t0SPS2dxCzU=",
   "success": true,
-  "projectFilePath": "F:\\Dev\\Zapchat\\Zapchat.Domain\\Zapchat.Domain.csproj",
+  "projectFilePath": "E:\\dev\\zapchat-api\\Zapchat.Domain\\Zapchat.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

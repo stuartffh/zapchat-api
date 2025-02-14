@@ -1,10 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Zapchat.Service.DTOs;
-using Zapchat.Service.Services;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Zapchat.Service.Interfaces;
+using Zapchat.Domain.Interfaces;
 using Zapchat.Domain.DTOs;
 
 namespace Zapchat.Api.Controllers
@@ -21,12 +16,12 @@ namespace Zapchat.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<GrupoWhatsAppDto>> ListarTodos() => await _grupoWhatsAppservice.ListarTodos();
+        public async Task<IEnumerable<GrupoWhatsAppDto>> ListarTodos() => await _grupoWhatsAppservice.GetAllAsync();
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(Guid id)
         {
-            var grupo = await _grupoWhatsAppservice.BuscarPorId(id);
+            var grupo = await _grupoWhatsAppservice.GetByIdAsync(id);
             if (grupo == null)
                 return NotFound();
 
@@ -39,7 +34,7 @@ namespace Zapchat.Api.Controllers
         {
             try
             {
-                var grupoWhats = await _grupoWhatsAppservice.Adicionar(dto);
+                var grupoWhats = await _grupoWhatsAppservice.AddAsync(dto);
                 return CreatedAtAction(nameof(GetById), new { id = grupoWhats.Id }, grupoWhats);
             }
             catch (Exception ex)
@@ -52,14 +47,14 @@ namespace Zapchat.Api.Controllers
         public async Task<IActionResult> Atualizar(Guid id, [FromBody] GrupoWhatsAppDto dto)
         {
             if (id != dto.Id) return BadRequest();
-            await _grupoWhatsAppservice.Atualizar(dto);
+            await _grupoWhatsAppservice.UpdateAsync(id, dto);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Deletar(Guid id)
         {
-            await _grupoWhatsAppservice.Deletar(id);
+            await _grupoWhatsAppservice.DeleteAsync(id);
             return NoContent();
         }
     }

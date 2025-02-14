@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Zapchat.Domain.Interfaces;
-using Zapchat.Service.Interfaces;
 
 namespace Zapchat.Api.Controllers
 {
