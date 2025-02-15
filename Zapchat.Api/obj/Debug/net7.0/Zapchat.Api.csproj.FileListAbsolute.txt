@@ -170,3 +170,11 @@ E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authorizati
 E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
 E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
 E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\ClosedXML.dll
+E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\ClosedXML.Parser.dll
+E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\DocumentFormat.OpenXml.Framework.dll
+E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\ExcelNumberFormat.dll
+E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\RBush.dll
+E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\SixLabors.Fonts.dll
+E:\dev\zapchat-api\Zapchat.Api\bin\Debug\net7.0\System.IO.Packaging.dll

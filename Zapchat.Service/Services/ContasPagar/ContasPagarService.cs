@@ -1,6 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using ClosedXML.Excel;
+using Microsoft.Extensions.Configuration;
 using System.Globalization;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using Zapchat.Domain.DTOs.ContasPagar;
@@ -18,82 +20,6 @@ namespace Zapchat.Service.Services.ContasPagar
             _configuration = configuration;
         }
 
-        //public async Task<string> ListarContasPagarExcel(ListarContasPagarExcelDto listarContasPagarExcelDto)
-        //{
-        //    //var baseUri = _configuration["BaseUrlOmie"];
-        //    var baseUri = "https://app.omie.com.br/api/v1/financas/contapagar/";
-        //    if (string.IsNullOrEmpty(baseUri))
-        //        throw new InvalidOperationException("A URL da API não foi configurada no appsettings.json.");
-
-        //    //using var client = new HttpClient();
-        //    //var content = new StringContent($"{{\"token\":\"{token}\"}}", Encoding.UTF8, "application/json");
-        //    //var response = await client.PostAsync(urlAsftpApi, content);
-
-        //    using var httpClient = new HttpClient();
-
-        //    var body = $"{{\"call\":\"ListarContasPagar\",\"app_key\":\"38333295000\",\"app_secret\":\"8e656102b1d574351e95a1072a4e7b08\",\"param\":[{{\"pagina\":1,\"registros_por_pagina\":20,\"apenas_importado_api\":\"N\"}}]}}";
-        //    //httpClient.DefaultRequestHeaders.Add("Content-Type", "application/json");
-
-        //    /*var payload = new
-        //    {
-        //        call = "ListarContasPagar",
-        //        app_key = 4268864731131,
-        //        app_secret = "8e656102b1d574351e95a1072a4e7b08",
-        //        param = new 
-        //        [
-        //        {
-        //            pagina = 1,
-        //            registros_por_pagina = 999,
-        //            apenas_importado_api = "N"
-        //        }
-        //        ]
-        //    };*/
-
-        //    /*var jsonPayload = JsonSerializer.Serialize(body, new JsonSerializerOptions
-        //    {
-        //        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-        //    });*/
-
-        //    var content = new StringContent(body, Encoding.UTF8, "application/json");
-
-        //    try
-        //    {
-        //        var response = await httpClient.PostAsync(baseUri, content);
-
-        //        var responseBody = await response.Content.ReadAsStringAsync();
-        //        Console.WriteLine($"Código HTTP: {response.StatusCode}");
-        //        Console.WriteLine($"Resposta da API: {responseBody}");
-
-        //        if (!response.IsSuccessStatusCode)
-        //        {
-        //            throw new HttpRequestException($"Erro na API Omie. Código: {response.StatusCode}, Resposta: {responseBody}");
-        //        }
-
-
-        //        var resultado = JsonSerializer.Deserialize<ListarContasPagarDto>(responseBody, new JsonSerializerOptions
-        //        {
-        //            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-        //        });
-
-        //        return ExportarContasPagarCsvBase64(resultado.ContaPagarCadastro);
-
-        //        /*
-        //         * GovBrRequest? govBr = JsonSerializer.Deserialize<GovBrRequest>(response.Data!, new JsonSerializerOptions
-        //            {
-        //                PropertyNameCaseInsensitive = true,
-        //                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-        //            });
-        //        */
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        return await Task.FromResult($"Erro ao chamar API: {ex.Message}");
-        //    }
-
-        //}
-
         public async Task<string> ListarContasPagarExcel(ListarContasPagarExcelDto listarContasPagarExcelDto)
         {
             var baseUri = "https://app.omie.com.br/api/v1/financas/contapagar/";
@@ -104,17 +30,17 @@ namespace Zapchat.Service.Services.ContasPagar
             var request = new
             {
                 call = "ListarContasPagar",
-                app_key = "38333295000",
+                app_key = "4268864731131",
                 app_secret = "8e656102b1d574351e95a1072a4e7b08",
                 param = new[]
                 {
-            new
-            {
-                pagina = 1,
-                registros_por_pagina = 20,
-                apenas_importado_api = "N"
-            }
-        }
+                    new
+                    {
+                        pagina = 1,
+                        registros_por_pagina = 10,
+                        apenas_importado_api = "N"
+                    }
+                }
             };
 
             try
@@ -123,7 +49,7 @@ namespace Zapchat.Service.Services.ContasPagar
                 var response = await ExecuteApiCall<object, ListarContasPagarDto>(HttpMethod.Post, new Uri(baseUri), request);
 
                 // Exporta o resultado para CSV em Base64
-                return ExportarContasPagarCsvBase64(response.ContaPagarCadastro);
+                return ExportarContasPagarXlsxBase64(response.ContaPagarCadastro);
             }
             catch (Exception ex)
             {
@@ -131,41 +57,56 @@ namespace Zapchat.Service.Services.ContasPagar
             }
         }
 
-        private string ExportarContasPagarCsvBase64(List<ContaPagarCadastroDto> ListContaPagarCadastroDto)
+        private string ExportarContasPagarXlsxBase64(List<ContaPagarCadastroDto> ListContaPagarCadastroDto)
         {
-            var sb = new StringBuilder();
-            sb.AppendLine("CodigoLancamentoOmie,CodigoClienteFornecedor,DataEmissao,DataVencimento,StatusTitulo,ValorDocumento");
-
-            foreach (var conta in ListContaPagarCadastroDto)
+            // Criar o arquivo Excel em memória
+            using (var workbook = new XLWorkbook())
             {
-                sb.AppendLine($"{conta.CodigoLancamentoOmie}," +
-                              $"{conta.CodigoClienteFornecedor}," +
-                              $"{conta.DataEmissao.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)}," +
-                              $"{conta.DataVencimento.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)}," +
-                              $"{conta.StatusTitulo}," +
-                              $"{conta.ValorDocumento.ToString(CultureInfo.InvariantCulture)}");
+                var worksheet = workbook.AddWorksheet("ContasPagar");
+
+                // Cabeçalhos
+                worksheet.Cell(1, 1).Value = "CodigoLancamentoOmie";
+                worksheet.Cell(1, 2).Value = "CodigoClienteFornecedor";
+                worksheet.Cell(1, 3).Value = "DataEmissao";
+                worksheet.Cell(1, 4).Value = "DataVencimento";
+                worksheet.Cell(1, 5).Value = "StatusTitulo";
+                worksheet.Cell(1, 6).Value = "ValorDocumento";
+
+                // Preencher os dados
+                int row = 2;
+                foreach (var conta in ListContaPagarCadastroDto)
+                {
+                    worksheet.Cell(row, 1).Value = conta.CodigoLancamentoOmie;
+                    worksheet.Cell(row, 2).Value = conta.CodigoClienteFornecedor;
+                    worksheet.Cell(row, 3).Value = DateTime.Now;//conta.DataEmissao.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    worksheet.Cell(row, 4).Value = DateTime.Now;//conta.DataVencimento.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    worksheet.Cell(row, 5).Value = conta.StatusTitulo;
+                    worksheet.Cell(row, 6).Value = conta.ValorDocumento.ToString(CultureInfo.InvariantCulture);
+                    row++;
+                }
+
+                // Salvar o arquivo em memória
+                using (var memoryStream = new MemoryStream())
+                {
+                    workbook.SaveAs(memoryStream);
+                    var byteArray = memoryStream.ToArray();
+                    return Convert.ToBase64String(byteArray);
+                }
             }
-
-            var byteArray = Encoding.UTF8.GetBytes(sb.ToString());
-
-            return Convert.ToBase64String(byteArray);
         }
 
         private async Task<TResponse> ExecuteApiCall<TRequest, TResponse>(HttpMethod httpMethod, Uri fullUrl, TRequest request)
         {
-            using var httpClient = new HttpClient();
-
-            // Serializa o objeto de requisição para JSON
             var jsonPayload = JsonSerializer.Serialize(request, new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             });
 
-            // Cria o conteúdo da requisição
             var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
             // Faz a requisição HTTP
-            var response = await httpClient.PostAsync(fullUrl, content);
+            var response = await _httpClient.PostAsync(fullUrl, content);
 
             // Verifica se a requisição foi bem-sucedida
             if (!response.IsSuccessStatusCode)
