@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zapchat.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47e19fe2a630b805cef6af8262ec4863ad74a851")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52080794ad3f6a6291d0b86c302484c43f4777b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zapchat.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zapchat.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
